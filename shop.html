@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hamsterland_shop</title>
+    </head>
+    <style>
+
+    
+        img {
+            opacity: 0.5;
+        }
+
+        img:hover {
+            opacity: 1.0;
+        }
+
+        body {
+            background-color:burlywood;
+            margin:25px;
+        }
+        h1 {
+            color:chocolate;
+            background-color:beige;
+            border: 10px ridge black;
+            border-radius: 3vw 3vw 0 0;
+            margin-bottom: 0.5vw;
+            text-align: center;
+            font-size: 10vw;
+            
+            margin-top: 0;
+        }
+        .button{
+            color: chocolate;
+            border-radius: 2vw 2vw 2vw 2vw;
+            background-color:beige;
+            border: 5px ridge black;
+            padding: 30px 64px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        div{ /*per disporre i bottoni*/
+            display:flex;
+            justify-content: space-around;
+            margin-bottom: 1vh;
+       }
+
+
+
+        /* Mobile */
+        @media screen and (max-width: 800px) {
+            div{
+                flex-direction: column;
+            }
+            .button{
+                width: 80vw;
+                margin-right: auto;
+                margin-left: auto; 
+                text-align: center; 
+            }
+
+            div.polaroid {
+                width: 80%;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 25px;
+                margin-top: 5vw;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            div.container {
+                text-align: center;
+                padding: 10px 20px;
+            }
+
+            p{
+                text-align: center;
+                font-size: 5vw;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: justify;
+            }
+                    
+        }
+        
+        /* Desktop */
+        @media screen and (min-width: 800px) {
+          
+
+            div.polaroid {
+                width: 50%;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 25px;
+                margin-top: 5vw;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            div.container {
+                text-align: center;
+                padding: 10px 20px;
+            }
+
+            p{
+                text-align: center;
+                font-size: 2vw;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: justify;
+            }  
+        }
+            
+    </style>
+    <body>
+        <h1>Our shop</h1>
+        <div>
+            <a href="index.html" class="button">Home</a> <!--per fare i bottoni -->
+            <a href="shop.html" class="button">Shop</a>
+            <a href="contacts.html" class="button">Contacts</a>
+        </div>
+  
+        <div class="polaroid">
+            <img src="images/rampetta.png"style="width:100%">
+            <div class="container">
+                <p>Wooden swing</p>
+            </div>
+        </div>
+          
+        <div class="polaroid">
+            <img src="images/podietto.png" style="width:100%">
+            <div class="container">
+                <p>Wooden game with platforms</p>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="images/amaca.png" style="width:100%">
+            <div class="container">
+                <p>Wooden bridge with ladder and hammock</p>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="images/ruota.png" style="width:100%">
+            <div class="container">
+                <p>Eco-friendly wheel for rodents</p>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="images/mangiatoia.png" style="width:100%">
+            <div class="container">
+                <p>Certified wood hay feeder </p>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="images/gabbia1.png" style="width:100%">
+            <div class="container">
+                <p>Wooden cage with hygienic grid and accessories</p>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="images/gabbia2.png" style="width:100%">
+            <div class="container">
+                <p>Multi-deck cage with accessories included</p>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hamsterland_contacts</title>
+    </head>
+    <style>
+
+        body{
+            background-color:burlywood;
+        }
+        h1 {
+            color:chocolate;
+            background-color:beige;
+            border: 10px ridge black;
+            border-radius: 3vw 3vw 0 0;
+            margin-bottom: 0.5vw;
+            text-align: center;
+            font-size: 10vw;
+            margin-top: 0;
+        }
+        .button{
+            color: chocolate;
+            border-radius: 2vw 2vw 2vw 2vw;
+            background-color:beige;
+            border: 5px ridge black;
+            padding: 30px 64px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        div{
+            display:flex;
+            justify-content: space-around;
+            margin-bottom: 1vh;
+        }
+        p {
+            text-align: center;
+            font-size: 3vw;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: justify;
+        }
+        
+      /*  div1 {
+            width: 300px;
+            margin: auto;
+            border: 8px solid beige;
+        }*/
+
+        /* Mobile */
+        @media screen and (max-width: 800px) {
+            img {
+                width: 95vw;
+                border-radius: 500px;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 5vw;
+            }
+            p{
+                font-size: 5vw;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: justify;
+            }
+
+            div{
+                flex-direction: column;
+            }
+            .button{
+                width: 80vw;
+                margin-right: auto;
+                margin-left: auto; 
+                text-align: center; 
+            }
+        }
+        
+        /* Desktop */
+        @media screen and (min-width: 800px) {
+            img {
+                float: inline-start;
+                width: 18vw;
+                border-radius: 500px;
+                margin-left: 5vw;
+                margin-top: 5vw;
+                flex-direction: column;
+            }
+            p{
+                text-align:  center;
+                margin-top: 10vw;
+                flex-direction: column;
+            }
+        }
+            
+    </style>
+    <body>
+        <h1>Contacts</h1>
+        <div>
+            <a href="index.html" class="button">Home</a> <!--per fare i bottoni -->
+            <a href="shop.html" class="button">Shop</a>
+            <a href="contacts.html" class="button">Contacts</a>
+        </div>
+
+        <div1>
+            <p>Contact us to get our squeak-taculars products!</p>
+        </div1>
+        
+        <div>
+            <img src="images/gmail.png">
+            <p>hamsterland-official@gmail.com </p>
+        </div>
+        
+        <div>
+            <img src="images/insta.webp">
+            <p>@hamsterland_official</p>
+        </div>
+       
+        <div>
+            <img src="images/Pinterest.png">
+            <p>@hamsterland_official</p>
+        </div>
+
+        <div>
+            <img src="images/facebook.png">
+            <p>@hamsterland_official</p>
+        </div>
+        
+    </body>
+</html>
