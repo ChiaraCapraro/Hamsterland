@@ -2,96 +2,97 @@
 <html>
     <head>
         <title>Hamsterland_home</title>
-    </head>
-    <style>
-        body {
-            background-color:burlywood;
-        }
-        h1 {
-            color: chocolate;
-            background-color:beige;
-            border: 10px ridge black;
-            border-radius: 3vw 3vw 0 0;
-            margin-bottom: 0.5vw;
-            text-align: center;
-            font-size: 10vw;
-            margin-top: 0;
-        }
-        p {
-            text-align: center;
-            font-size: 3vw;
-            margin-right: auto;
-            margin-left: auto;
-            text-align: justify;
-        }
-       /* p.intro {
-            background-image: url("images/wallpaper.jpg");
-            background-size: contain;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0;
-            width: 98vw;
-        }*/
-        .button{
-            color: chocolate;
-            border-radius: 2vw 2vw 2vw 2vw;
-            background-color:beige;
-            border: 5px ridge black;
-            padding: 30px 64px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 30px;
-            cursor: pointer;
-        }
-        div{
-            display:flex;
-            justify-content: space-around;
-            margin-bottom: 1vh;
-        }
-        
-
-        /* Mobile */
-        @media screen and ((max-device-width: 800px) or (max-width: 800px)) {
-            img {
-                width: 95vw;
-                border-radius: 500px;
+        <style>
+            body {
+                background-color:burlywood;
+            }
+            h1 {
+                color: chocolate;
+                background-color:beige;
+                border: 10px ridge black;
+                border-radius: 3vw 3vw 0 0;
+                margin-bottom: 0.5vw;
+                text-align: center;
+                font-size: 10vw;
+                margin-top: 0;
+            }
+            p {
+                text-align: center;
+                font-size: 3vw;
                 margin-right: auto;
                 margin-left: auto;
-                margin-top: 5vw;
-            }
-            p{
-                text-align: center;
-                font-size: 5vw;
-            }
-            div{
-                flex-direction: column;
+                text-align: justify;
             }
             .button{
-                width: 80vw;
-                margin-right: auto;
-                margin-left: auto; 
-                text-align: center; 
+                color: chocolate;
+                border-radius: 2vw 2vw 2vw 2vw;
+                background-color:beige;
+                border: 5px ridge black;
+                padding: 3vw 10vw;
+                width: 10vw;
+                text-align: center;
+                text-decoration: none;
+                font-size: 3vw;
+                cursor: pointer;
+                margin-top: 1vw;
+            }
+            div{
+                display:flex;
+                justify-content: space-around;
+                margin-bottom: 1vh;
             }
 
-        }
-        
-        /* Desktop */
-        @media screen and ((min-device-width: 800px) or (min-width: 800px)) {
-            img {
-                float:left;
-                width: 30vw;
-                border-radius: 500px;
-                margin-right: auto;
-                margin-left: 5vw;
-                margin-top: 5vw;
+            div.central {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-bottom: 1vh;
             }
-            p{
-                text-align:  center;
-                margin-top: 10vw;
+    
+            /* Mobile */
+            @media screen and ((max-device-width: 800px) or (max-width: 800px)) {
+                div.central {
+                    flex-direction: column;
+                }
+                img {
+                    width: 95vw;
+                    min-width: 95vw;
+                    border-radius: 500px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 5vw;
+                }
+                p{
+                    text-align: center;
+                    font-size: 4.5vw;
+                }
+                div{
+                    flex-direction: column;
+                }
+                .button{
+                    width: 80vw;
+                    margin-right: auto;
+                    margin-left: auto; 
+                    text-align: center; 
+                }
             }
-        }
-    </style>
+            
+            /* Desktop */
+            @media screen and ((min-device-width: 800px) or (min-width: 800px)) {
+                img {
+                    width: 30vw;
+                    border-radius: 500px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 5vw;
+                }
+                p{
+                    text-align:  center;
+                    margin-top: 10vw;
+                }
+            }
+        </style>
+    </head>
     <body>
         <h1>Hamsterland</h1>
         <div>
@@ -99,15 +100,25 @@
             <a href="shop.html" class="button">Shop</a>
             <a href="contacts.html" class="button">Contacts</a>
         </div>
-        <img src="images/criceto2.jpg">
-        <p>
-            Are you looking for a gift for your hamster?<br>
-            Here you'll find the best products for your pet!
-        </p>
+        <div class="central">
+            <img src="images/criceto2.jpg">
+            <p>
+                Are you looking for a gift for your hamster?<br>
+                Here you'll find the best products for your pet!
+            </p>
+        </div>
         <p>
             <a href="easteregg.html">
                 Click here to see a fat hamster
             </a>
         </p>
+        <p>
+            Some reasons why our activity is better than the others:
+        </p>
+        <ul>
+            <li>Our products are rated 10/10</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul> 
     </body>
 </html>
