@@ -1,0 +1,93 @@
+div.row-div {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: horizontal;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+}
+/* Regole CSS per i <div> contenuti direttamente dentro i <div class="row-div"> */
+div.row-div > div {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vw;
+}
+div.row-div > div > img {
+    width: 100%;
+    max-width: 30vw;
+    opacity: 0.5;
+}
+div.row-div > div > img:hover {
+    opacity: 1.0;
+    border-radius: 0.1vw;
+}
+div.row-div > div > div > p {
+    font-size: 1.5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.buttons-div {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+/* Desktop */
+@media screen and ((min-device-width: 800px) or (min-width: 800px)) {
+
+}
+
+/* Mobile */
+@media screen and ((max-device-width: 800px) or (max-width: 800px)) {
+    div.row-div {
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.row-div > div {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        width: 90vw;
+    }
+    div.row-div > div > img {
+        max-width: 80vw;
+    }
+    div.row-div > div > div > p {
+        font-size: 3vw;
+    }
+    div.buttons-div {
+        flex-direction: column;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        width: 90vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    div.buttons-div > a.button {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        width: 80vw;
+        padding: 30px 7.5vw;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
