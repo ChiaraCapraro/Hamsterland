@@ -42,12 +42,6 @@
             margin-left: auto;
             text-align: justify;
         }
-        
-      /*  div1 {
-            width: 300px;
-            margin: auto;
-            border: 8px solid beige;
-        }*/
 
         /* Mobile */
         @media screen and ((max-device-width: 800px) or (max-width: 800px)) {
@@ -92,7 +86,11 @@
                 flex-direction: column;
             }
         }
-            
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }    
     </style>
     <body>
         <h1>Contacts</h1>
@@ -105,26 +103,26 @@
         <div>
             <p>Contact us to get our squeak-taculars products!</p>
         </div>
-        
-        <div>
-            <img src="images/gmail.png">
-            <p>hamsterland-official@gmail.com</p>
-        </div>
-        
-        <div>
-            <img src="images/insta.webp">
-            <p>@hamsterland_official</p>
-        </div>
-       
-        <div>
-            <img src="images/Pinterest.png">
-            <p>@hamsterland_official</p>
-        </div>
 
-        <div>
-            <img src="images/facebook.png">
-            <p>@hamsterland_official</p>
-        </div>
-        
+        <table>
+            <tr>
+                <td>
+                    <img src="images/gmail.png">
+                </td>
+                <td><p>hamsterland-official@gmail.com</p></td>
+            </tr>
+            <tr>
+                <td><img src="images/insta.webp"></td>
+                <td><p>@hamsterland_official</p></td>
+            </tr>
+            <tr>
+                <td><img src="images/Pinterest.png"></td>
+                <td><p>@hamsterland_official</p></td>
+            </tr>
+            <tr>
+                <td><img src="images/facebook.png"></td>
+                <td><p>@hamsterland-official</p></td>
+            </tr>
+        </table>
     </body>
 </html>
